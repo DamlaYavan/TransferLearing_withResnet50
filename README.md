@@ -46,6 +46,9 @@ Doğrulama doğruluğu ise ilk epoch'ta %84.50 iken, son epoch'ta %90.63'e yüks
 Kayıp değerleri de eğitim süreci boyunca azalmıştır.
 Bu sonuçlar, modelin çiçek sınıflarını doğru bir şekilde tanımlayabildiğini ve genelleme yeteneğinin yüksek olduğunu göstermektedir. Ancak, modelin bazı epoch'larda aşırı uydurma (overfitting) eğilimi gösterdiği görülmektedir. Bu durum, modelin daha fazla veriyle eğitilerek veya modelin karmaşıklığının azaltılarak düzeltilebilir.
 
-![ eğitim ve doğrulama kaybı ](![image](https://github.com/DamlaYavan/TransferLearing_withResnet50/assets/116723754/38f78e86-6cac-4fce-b3c1-24e14dac1287)
-")
+
+### eğiğtim sırasında elde edilen Eğitim ve doğrulama kaybı grafiği
+(![image](https://github.com/DamlaYavan/TransferLearing_withResnet50/assets/116723754/10fe6b9f-6c8e-4d51-90c7-fbd70cda55eb)
+)
+
 

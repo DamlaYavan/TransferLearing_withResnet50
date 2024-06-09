@@ -1,18 +1,18 @@
 # TransferLearing_withResnet50
 Bu proje, veri setindeki 16 farklı çiçek sınıfını sınıflandırmak amacıyla yapılmıştır. Bu amaç doğrultusunda, önceden eğitilmiş bir ResNet50 modeli kullanılarak transfer öğrenme tekniği uygulanmıştır. Modelin eğitimi ve doğrulaması için TensorFlow ve Keras kütüphaneleri kullanılmıştır
 
-- ##Veri Seti
+- ## Veri Seti
 Veri seti:  https://www.kaggle.com/datasets/l3llff/flowers/data
 Proje, flowers adlı bir veri seti kullanılarak gerçekleştirilmiştir. Bu veri seti, 16 farklı çiçek sınıfına ait resimlerden oluşmaktadır. Her sınıf, farklı sayıda görüntü içermekte olup, bu görüntüler eğitim ve doğrulama seti olarak ikiye ayrılmıştır.Toplam görüntü sayısı 15740 dır.
 Sınıflar şunlardır: astilbe, bellflowe , black_eyed_susan , calendula , california_poppy,  carnation , common_daisy, coreopsis , daffodil , dandelion , iris, magnolia , rose , sunflower, tulip , water_lily 
 
-- ##One-Hot Kodlama
+- ## One-Hot Kodlama
 Modelimizin eğitimi öncesinde, veri setimizin etiketlerini one-hot kodlama yöntemiyle dönüştürdük. Bu işlem, sınıfların kategorik verilerden sayısal verilere dönüştürülmesini sağlar ve sınıflandırma modellerinin etiketleri daha kolay işlemesine yardımcı olur.
 Etiketlerin One-Hot Kodlanması:
 One-Hot Kodlama Fonksiyonu: one_hot_encode fonksiyonu, görüntü ve etiketleri alır ve etiketleri one-hot kodlamaya dönüştürür.
 Map Fonksiyonu ile Dönüşüm: Eğitim ve doğrulama veri setleri, map fonksiyonu kullanılarak one-hot kodlamaya tabi tutulur.
 
-##RESNET50
+## RESNET50
 ResNet50 (Residual Networks): Derin öğrenme modelleri arasında önemli bir yer tutan ve 50 katmandan oluşan bir yapıdır. Microsoft Research tarafından geliştirilmiş ve ImageNet yarışmasında büyük başarı elde etmiştir. ResNet, özellikle derin sinir ağlarının eğitiminde karşılaşılan "vanishing gradient" (kaybolan gradyan) problemini çözmeyi hedefler.
 ResNet50'nin Özellikleri
 Derinlik: 50 katmanlı derin bir yapıya sahiptir, bu sayede karmaşık özellikleri öğrenme kapasitesi yüksektir.
@@ -25,7 +25,7 @@ Segmentasyon: Görüntülerin belirli bölümlerini ayırt eder.
 Görüntü Tanıma ve Analizi: Medikal görüntülerde anomali tespiti gibi alanlarda yaygın kullanılır.
 
 
-##Modelin Derlenmesi ve Eğitilmesi 
+## Modelin Derlenmesi ve Eğitilmesi 
 Optimizasyon Algoritması:
 Adam optimizasyon algoritması kullanılmıştır. Bu algoritma, öğrenme oranını dinamik olarak ayarlayarak hızlı ve etkili bir eğitim süreci sağlar. Öğrenme oranı 0.001 olarak belirlenmiştir.
 
@@ -37,7 +37,7 @@ Modelin performansını değerlendirmek için accuracy metriği kullanılmışt�
 
  Model, yapılandırıldıktan ve derlendikten sonra eğitim sürecine geçilir. Eğitim sırasında model, eğitim veri seti üzerinde 50 epoch boyunca eğitilmiştir. Her epoch'ta model, veri setindeki tüm örnekleri gözden geçirir ve ağırlıklarını güncelleyerek hata oranını azaltmaya çalışır. 
 
-#SONUÇLAR
+# SONUÇLAR
 Modelin eğitimi sonucunda elde edilen sonuçlar aşağıdaki gibidir:
 
 Epoch sayısı arttıkça, eğitim ve doğrulama veri setlerindeki doğruluk oranları artmıştır.
